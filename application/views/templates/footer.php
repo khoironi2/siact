@@ -3,7 +3,7 @@
         ***********************************-->
 <div class="footer">
     <div class="copyright">
-        <p>Copyright © Designed &amp; Developed by <a href="http://dexignlab.com/" target="_blank">DexignLab</a> 2020</p>
+        <p>Copyright © Developed by <a href="https://www.akbara.ac.id/" target="_blank">Akbara Inovation Center</a> &amp; Designed by <a href="http://dexignlab.com/" target="_blank">DexignLab</a> 2020</p>
     </div>
 </div>
 <!--**********************************

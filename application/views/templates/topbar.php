@@ -625,8 +625,7 @@
                                     Data Master
                                 </a>
                                 <ul aria-expanded="false">
-                                    <li><a href="relawan.html">Relawan</a></li>
-                                    <li><a href="tambahrelawan.html">Tambah Relawan</a></li>
+                                    <li><a href="<?= base_url('master/data_relawan/relawan/') ?>">Relawan</a></li>
                                 </ul>
                             </li>
                         </ul>
