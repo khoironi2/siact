@@ -11,19 +11,20 @@
                                         <p class="mb-4" style="font-size: 12px; text-align:center;">Silahkan login dengan NIK dan Password AKBARA Anda</p>
                                         <?= $this->session->flashdata('error_login'); ?>
                                     </div>
-                                    <form action="<?= base_url('auth/loginForm') ?>" method="POST">
+                                    <form action="<?= base_url('') ?>" method="POST">
                                         <div class="form-group">
                                             <label class="mb-1"><strong>NIK</strong></label>
-                                            <input type="text" class="form-control" name="nik" id="nik" required>
+                                            <input type="text" class="form-control" name="nik" id="nik">
                                         </div>
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" name="password" id="password" required>
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                            <input type="password" class="form-control" name="password" id="password">
                                         </div>
                                     </form>
+                                    <div class="text-center">
+                                        <a href="<?= base_url('') ?>"> <button type="submit" class="btn btn-primary btn-block">Login</button></a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
