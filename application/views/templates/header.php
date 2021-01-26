@@ -18,6 +18,10 @@
     <link href="<?= base_url('assets/') ?>icons/font-awesome-old/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?= base_url('assets/') ?>cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 
+    <!-- Select2 -->
+    <link rel="stylesheet" href="<?= base_url('assets/v3'); ?>/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/v3'); ?>/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
     <style>
         /* ukuran peta */
         #mapid {

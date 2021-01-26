@@ -49,8 +49,8 @@
 <script src="<?= base_url('assets/') ?>vendor/svganimation/vivus.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/svganimation/svg.animation.js"></script>
 
-
-
+<!-- Select2 -->
+<script src="<?= base_url('assets/v3'); ?>/plugins/select2/js/select2.full.min.js"></script>
 
 <script>
     // set lokasi latitude dan longitude, lokasinya kota palembang 
