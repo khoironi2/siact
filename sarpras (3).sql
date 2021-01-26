@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 27, 2021 at 02:06 AM
--- Server version: 5.7.24
--- PHP Version: 5.6.37
+-- Waktu pembuatan: 27 Jan 2021 pada 04.33
+-- Versi server: 5.7.24
+-- Versi PHP: 5.6.37
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_jabatan`
+-- Struktur dari tabel `tbl_jabatan`
 --
 
 CREATE TABLE `tbl_jabatan` (
@@ -34,7 +34,7 @@ CREATE TABLE `tbl_jabatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_jabatan`
+-- Dumping data untuk tabel `tbl_jabatan`
 --
 
 INSERT INTO `tbl_jabatan` (`id_jabatan`, `nama_jabatan`) VALUES
@@ -54,7 +54,7 @@ INSERT INTO `tbl_jabatan` (`id_jabatan`, `nama_jabatan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_penelitian`
+-- Struktur dari tabel `tbl_penelitian`
 --
 
 CREATE TABLE `tbl_penelitian` (
@@ -69,7 +69,7 @@ CREATE TABLE `tbl_penelitian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_penelitian`
+-- Dumping data untuk tabel `tbl_penelitian`
 --
 
 INSERT INTO `tbl_penelitian` (`id_penelitian`, `judul_penelitian`, `reputasi_penelitian`, `link_penelitian`, `file_penelitian`, `id_users`, `time_update_data_penelitian`, `created_by`) VALUES
@@ -78,7 +78,7 @@ INSERT INTO `tbl_penelitian` (`id_penelitian`, `judul_penelitian`, `reputasi_pen
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_pengajuan`
+-- Struktur dari tabel `tbl_pengajuan`
 --
 
 CREATE TABLE `tbl_pengajuan` (
@@ -102,7 +102,7 @@ CREATE TABLE `tbl_pengajuan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_pengajuan`
+-- Dumping data untuk tabel `tbl_pengajuan`
 --
 
 INSERT INTO `tbl_pengajuan` (`id_pengajuan`, `judul_pengajuan`, `latar_belakang_pengajuan`, `tujuan_pengajuan`, `manfaat_pengajuan`, `jenis_pengajuan`, `biaya_pengajuan`, `waktu_pengajuan_awal`, `waktu_pengajuan_akhir`, `peserta_pengajuan`, `penutup_pengajuan`, `file_pengajuan`, `id_users`, `dirumuskan_pengajuan`, `diperiksa_pengajuan`, `ditetapkan_pengajuan`, `dikendalikan_pengajuan`) VALUES
@@ -113,7 +113,7 @@ INSERT INTO `tbl_pengajuan` (`id_pengajuan`, `judul_pengajuan`, `latar_belakang_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_users`
+-- Struktur dari tabel `tbl_users`
 --
 
 CREATE TABLE `tbl_users` (
@@ -139,12 +139,12 @@ CREATE TABLE `tbl_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_users`
+-- Dumping data untuk tabel `tbl_users`
 --
 
 INSERT INTO `tbl_users` (`id_users`, `nik`, `password`, `email`, `nama_lengkap`, `nama_panggilan`, `id_jabatan`, `time_login_users`, `time_logout_users`, `time_create_users`, `time_update_users`, `status_login`, `gambar_users`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `agama_users`, `kewarganegaraan_users`, `NIK_KTP`) VALUES
 (1, '06503620048', '$2y$10$w1GPdwAxhNNE.ngmiT9/9OilHEDDctgsmYb7BXZX.4EJfdVXdu7YS', 'masrony37@gmail.com', 'Khoironi, S.Kom., M.Kom', 'Roni', 13, '2021-01-27 00:57:22', '2021-01-27 01:06:02', '2021-01-04 14:07:43', NULL, NULL, 'khoironi.png', 'Laki - Laki', 'Sampang', '1996-03-07', 'Islam', 'Indonesia', NULL),
-(2, '06503620047', '$2y$10$sURGBwtJGLm11e8P12qYqe9Oznl5q/MjlgABTKEPmgFzRfwqe2aY6', NULL, 'Muhammad Luthfi Hamdani, S.M., M.M', 'Lutfi', 12, '2021-01-27 01:19:56', '2021-01-13 10:08:58', '2021-01-04 15:01:31', NULL, NULL, 'lutfi.png', 'Laki - Laki', NULL, NULL, 'Islam', 'Indonesia', NULL),
+(2, '06503620047', '$2y$10$sURGBwtJGLm11e8P12qYqe9Oznl5q/MjlgABTKEPmgFzRfwqe2aY6', NULL, 'Muhammad Luthfi Hamdani, S.M., M.M', 'Lutfi', 12, '2021-01-27 03:55:31', '2021-01-13 10:08:58', '2021-01-04 15:01:31', NULL, NULL, 'lutfi.png', 'Laki - Laki', NULL, NULL, 'Islam', 'Indonesia', NULL),
 (3, '06503620046', '$2y$10$602AkUkG5WDCca7B7EFIS.mq69K6yo7u3quM4gqHwwNDASgIzLsIC', NULL, 'Roudlotul Jannati Rochnadia Noorva Yudhitya, S.E., M.M', 'Ova', 1, '2021-01-13 10:55:08', '2021-01-13 10:11:37', '2021-01-04 15:51:36', NULL, NULL, 'ofa.png', 'Perempuan', 'Kartasura', '1990-11-07', 'Islam', 'Indonesia', NULL),
 (4, '0650361001', '$2y$10$lgGKuXgX0XYL.59lj5ZLRuboEUPG5Ng3cvCl/VcEw.RSssHJD8tla', NULL, 'Dr. H. Titis Wahyuono, M.Si.', 'Dr. Titis', 1, '2021-01-11 14:04:12', NULL, '2021-01-06 20:42:29', NULL, NULL, NULL, 'Laki - Laki', NULL, NULL, NULL, NULL, NULL),
 (5, '06503620037', '$2y$10$uQrizR6vD/TeXDpsFcwdteQKzoxfDI0vLYxOtZ/wiWt649reABzt.', NULL, 'Mega Santi Sekartaji, S.KM.', NULL, 11, '2021-01-14 00:13:48', NULL, '2021-01-13 09:08:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
@@ -154,53 +154,53 @@ INSERT INTO `tbl_users` (`id_users`, `nik`, `password`, `email`, `nama_lengkap`,
 --
 
 --
--- Indexes for table `tbl_jabatan`
+-- Indeks untuk tabel `tbl_jabatan`
 --
 ALTER TABLE `tbl_jabatan`
   ADD PRIMARY KEY (`id_jabatan`);
 
 --
--- Indexes for table `tbl_penelitian`
+-- Indeks untuk tabel `tbl_penelitian`
 --
 ALTER TABLE `tbl_penelitian`
   ADD PRIMARY KEY (`id_penelitian`);
 
 --
--- Indexes for table `tbl_pengajuan`
+-- Indeks untuk tabel `tbl_pengajuan`
 --
 ALTER TABLE `tbl_pengajuan`
   ADD PRIMARY KEY (`id_pengajuan`);
 
 --
--- Indexes for table `tbl_users`
+-- Indeks untuk tabel `tbl_users`
 --
 ALTER TABLE `tbl_users`
   ADD PRIMARY KEY (`id_users`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_jabatan`
+-- AUTO_INCREMENT untuk tabel `tbl_jabatan`
 --
 ALTER TABLE `tbl_jabatan`
   MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT for table `tbl_penelitian`
+-- AUTO_INCREMENT untuk tabel `tbl_penelitian`
 --
 ALTER TABLE `tbl_penelitian`
   MODIFY `id_penelitian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tbl_pengajuan`
+-- AUTO_INCREMENT untuk tabel `tbl_pengajuan`
 --
 ALTER TABLE `tbl_pengajuan`
   MODIFY `id_pengajuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `tbl_users`
+-- AUTO_INCREMENT untuk tabel `tbl_users`
 --
 ALTER TABLE `tbl_users`
   MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
