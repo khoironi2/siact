@@ -26,4 +26,22 @@ class Kaji_cepat extends CI_Controller
         $this->load->view('relawan/assesment/kaji_cepat/index');
         $this->load->view('templates/footer');
     }
+
+    public function add()
+    {
+
+        $data = [
+            'title' => 'SIM TANGGAP DARURAT ',
+            'parent' => 'Assesment ',
+            'child' => 'Kaji Cepat ',
+            'son' => 'Add',
+            'users' => $this->db->get_where('tbl_users', ['nik' => $this->session->userdata('nik')])->row_array(),
+            'account' => $this->Users_model->getAll()
+        ];
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/topbar');
+        $this->load->view('templates/sidebar');
+        $this->load->view('relawan/assesment/kaji_cepat/add');
+        $this->load->view('templates/footer');
+    }
 }

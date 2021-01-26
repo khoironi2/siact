@@ -49,6 +49,41 @@
 <script src="<?= base_url('assets/') ?>vendor/svganimation/vivus.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor/svganimation/svg.animation.js"></script>
 
+
+
+
+<script>
+    // set lokasi latitude dan longitude, lokasinya kota palembang 
+    var mymap = L.map('mapid').setView([-7.561269, 110.82598], 13);
+    //setting maps menggunakan api mapbox bukan google maps, daftar dan dapatkan token      
+    L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmFiaWxjaGVuIiwiYSI6ImNrOWZzeXh5bzA1eTQzZGxpZTQ0cjIxZ2UifQ.1YMI-9pZhxALpQ_7x2MxHw', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 20,
+            id: 'mapbox/streets-v11', //menggunakan peta model streets-v11 kalian bisa melihat jenis-jenis peta lainnnya di web resmi mapbox
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'your.mapbox.access.token'
+        }).addTo(mymap);
+
+
+    // buat variabel berisi fugnsi L.popup 
+    var popup = L.popup();
+
+    // buat fungsi popup saat map diklik
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("koordinatnya adalah " + e.latlng
+                .toString()
+            ) //set isi konten yang ingin ditampilkan, kali ini kita akan menampilkan latitude dan longitude
+            .openOn(mymap);
+
+        document.getElementById('latlong').value = e.latlng //value pada form latitde, longitude akan berganti secara otomatis
+    }
+    mymap.on('click', onMapClick); //jalankan fungsi
+</script>
+
 </body>
 
 <!-- Mirrored from motaadmin.dexignlab.com/xhtml/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Jan 2021 01:54:44 GMT -->
