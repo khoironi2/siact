@@ -25,7 +25,7 @@
 							<div class="card">
 								<div class="card-header border-0 pb-0">
 									<h4 class="card-title">ASSESMENT KERUSAKAN</h4>
-									<a href="<?= base_url('assesment/kerusakan/add') ?>">
+									<a href="<?= base_url('relawan/assesment/kerusakan/add') ?>">
 										<button type="button" class="btn btn-rounded btn-primary"><span class="btn-icon-left text-primary"><i class="fa fa-plus color-primary"></i>
 											</span>Add</button>
 									</a>

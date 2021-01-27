@@ -7,8 +7,9 @@
                         <div class="col-xl-12">
                             <div class="auth-form">
                                 <div style="text-align: center;">
-                                    <img height="100" src="<?= base_url('assets/') ?>images/Logo-Binis-Digital-Akbara.png" alt="POLITEKNIK AKBARA SURAKARTA">
-                                    <p class="mb-4" style="font-size: 12px; text-align:center;">Silahkan login dengan NIK dan Password AKBARA Anda</p>
+                                    <img height="100" src="<?= base_url('assets/') ?>images/pmi-akbara.png" alt="POLITEKNIK AKBARA SURAKARTA">
+
+                                    <p class="mb-4" style="font-size: 12px; text-align:center;">Silahkan login dengan NIK dan Password Anda</p>
                                     <?= $this->session->flashdata('error_login'); ?>
                                 </div>
                                 <form action="<?= base_url('auth/loginForm') ?>" method="POST">

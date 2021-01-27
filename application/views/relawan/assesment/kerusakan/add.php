@@ -31,16 +31,35 @@
 									<div class="basic-form">
 										<form>
 											<div class="form-group">
-												<label>JUMLAH TERDAMPAK</label>
-												<input type="text" class="form-control input-rounded " placeholder="Jumlah Korban">
+												<label for="exampleInputEmail1">JENIS BANGUNAN</label>
+												<div class="select2-purple">
+													<select class="select2" name="dirumuskan_pengajuan" multiple="multiple" data-placeholder="Select a State" data-dropdown-css-class="select2-danger" required style="width: 100%;">
+														<option class="text-primary" value="">SEKOLAH</option>
+														<option class="text-primary" value="">RUMAH SAKIT</option>
+														<option class="text-primary" value="">GEDUNG PEMERINTAH</option>
+														<option class="text-primary" value="">TEMPAT IBADAH</option>
+														<option class="text-primary" value="">DLL</option>
+													</select>
+												</div>
 											</div>
 											<div class="form-group">
-												<label>LUAS TERDAMPAK</label>
-												<input type="text" class="form-control input-rounded" placeholder="Luas Kira Kira">
+												<label for="exampleInputEmail1">LOKASI DIBUTUHKAN BENCANA AKTIF</label>
+												<div class="select2-purple">
+													<select class="select2" name="dirumuskan_pengajuan" multiple="multiple" data-placeholder="Select a State" data-dropdown-css-class="select2-danger" required style="width: 100%;">
+														<option class="text-success" value="">Gempa Mamuju Sulbar | </option>
+														<option class="text-dark" value="">Banjir Kalimantan Selatan | </option>
+													</select>
+												</div>
 											</div>
 											<div class="form-group">
-												<label>TANGGAL KEJADIAN</label>
-												<input type="date" class="form-control input-rounded">
+												<label for="exampleInputEmail1">TINGKAT KERUSAKAN</label>
+												<div class="select2-purple">
+													<select class="select2" name="dirumuskan_pengajuan" multiple="multiple" data-placeholder="Select a State" data-dropdown-css-class="select2-danger" required style="width: 100%;">
+														<option class="text-danger" value="">BERAT</option>
+														<option class="text-dark" value="">SEDANG</option>
+														<option class="text-dark" value="">RINGAN</option>
+													</select>
+												</div>
 											</div>
 											<div class="form-group">
 												<label>LOKASI KEJADIAN</label><br>
@@ -60,7 +79,7 @@
 												</div>
 											</div>
 											<div class="form-group mt-5">
-												<a href="<?= base_url('relawan/assesment/kaji_cepat') ?>">
+												<a href="<?= base_url('relawan/assesment/kerusakan') ?>">
 													<button type="button" class="btn btn-primary">SIMPAN</button>
 												</a>
 											</div>
